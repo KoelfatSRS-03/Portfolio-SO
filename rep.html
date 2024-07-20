@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Koelfat_SRS_Portfolio</title>
+    <link rel="stylesheet" href="rep.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="rep.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Programing languages</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://www.snapchat.com/add/rohansen03?sender_web_id=e6a1721c-83dd-4750-a939-29d2f9841bec&device_type=desktop&is_copy_url=true"><i class="fab fa-snapchat"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <script>let body = document.querySelector("body");
+      let navBar = document.querySelector(".navbar");
+      let menuBtn = document.querySelector(".menu-btn");
+      let cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = function(){
+        navBar.classList.add("active");
+        menuBtn.style.opacity = "0";
+        menuBtn.style.pointerEvents = "none";
+        body.style.overflow = "hidden";
+        scrollBtn.style.pointerEvents = "none";
+      }
+      cancelBtn.onclick = function(){
+        navBar.classList.remove("active");
+        menuBtn.style.opacity = "1";
+        menuBtn.style.pointerEvents = "auto";
+        body.style.overflow = "auto";
+        scrollBtn.style.pointerEvents = "auto";
+      }
+      
+      
+      let navLinks = document.querySelectorAll(".menu li a");
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click" , function() {
+          navBar.classList.remove("active");
+          menuBtn.style.opacity = "1";
+          menuBtn.style.pointerEvents = "auto";
+        });
+      }
+      </script>
+
+    
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Koelfat Shainil</div>
+          <div class="text-three">Live is short, so live it your way</div>
+          <div class="text-four">SRS.</div>
+        </div>
+        <div class="button">
+          <button id="StreakButton">Snapchat?</button>
+          <script>document.getElementById('StreakButton').addEventListener('click', function() {
+            window.location.href = 'https://www.snapchat.com/add/rohansen03?sender_web_id=e6a1721c-83dd-4750-a939-29d2f9841bec&device_type=desktop&is_copy_url=true';
+          });</script>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="IMG-20240718-WA0002.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Introduction</div>
+            <p class="spaced-text">
+              Hi, I'm Shainil Rohan Sen Koelfat, a passionate ICT'er based in Paramaribo, Suriname. I'm 16 years of age, I like the collor blue (theme of the website;). I'm a Hindu.
+            </p>
+            <div class="topic">Education:</div>
+            <p class="spaced-text">
+              At the moment i'm a student at Natin MBO, ICT.
+            </p>
+            <div class="topic">Personal intrests:</div>
+            <p class="spaced-text">
+              In my freetime, I enjoy playing football, football has been a passion of mine for as long as I can remember. The thrill of the game, the teamwork, and the discipline it requires i love it. Playing football has taught me the importance of strategy, quick thinking, and perseverance. Whether it’s a competitive match or a casual game with friends, I find joy and satisfaction in every moment on the field. The sport has not only kept me physically active but also helped me develop valuable skills like communication, leadership, and resilience.
+              My other hobby's are listening to music, or exploring new places, I like to stay active and inspired.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>Programing languages</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Programing Skills </div>
+            <p>I am a passionate and dedicated programmer with a solid foundation in several key programming languages, including HTML, CSS, Python, and JavaScript. My journey in the world of coding began with a fascination for web development, where I developed my skills in HTML, JavaScript and CSS, crafting visually appealing and responsive websites. Over time, I expanded my expertise to include Python.</p>
+            <div class="experience">
+              <div class="num">2</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">65%</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavScript</div>
+              <div class="per">60%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Python</div>
+              <div class="per">60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="services" id="services">
+        <div class="content">
+          <div class="title"><span>My projects</span></div>
+          <div class="boxes">
+            <div class="box">
+              <div class="icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <div class="topic">Web Devlopment</div>
+              <p>Developed a responsive and user-friendly web development website showcasing modern design principles and interactive features. Languages: html, css, JavScript.</p>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="topic">Graphic Design</div>
+              <p>Designed a vibrant and engaging brand identity for a Barbershop, including logo and their services. Languages: html, css.</p>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="topic">Digital Marketing</div>
+              <p>Successfully designed and executed a digital marketing campaign.Languages: html, css, JavScript. </p>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fab fa-android"></i>
+              </div>
+              <div class="topic">Icon Design</div>
+              <p>Designed a sleek and modern icon set for a IT company named Hi-Orizzy. App: Logomaker</p>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fas fa-camera-retro"></i>
+              </div>
+              <div class="topic">Photography</div>
+              <p>Captured pictures at weddings, festivals and birthdays. Edited with: Capcut.</p>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <div class="topic">Apps Devlopment</div>
+              <p>Developed a user-friendly mobile application for task management. Languages: html, css, JavScript.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+   
+    
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+      <p>If you have any questions or would like to get in touch, please fill out the form below or use one of the following methods:</p>
+      
+      <form action="your-form-handler.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+      
+      <div class="contact-info">
+        <p>Email: <a href="mailto:rohankoelfat@gmail.com">rohankoelfat@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+597 879-4767</a></p>
+        <p>Location: Shasweg 24, Paramaribo, Suriname</p>
+        <div class="social-media">
+          <a href="https://twitter.com/" target="_blank">Twitter</a>
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="https://www.snapchat.com/add/rohansen03?sender_web_id=e6a1721c-83dd-4750-a939-29d2f9841bec&device_type=desktop&is_copy_url=true" target="_blank">Snapchat</a>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">me, myself and i: Shainil Koelfat</a> | &#169; 2024 All Rights Reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
