@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Koelfat_SRS_Portfolio</title>
-    <link rel="stylesheet" href="rep.css" />
+    <link rel="stylesheet" href="test.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <script src="rep.js"></script>
+    <script src="test.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -38,6 +38,37 @@
       </div>
     </nav>
 
+    <script>let body = document.querySelector("body");
+      let navBar = document.querySelector(".navbar");
+      let menuBtn = document.querySelector(".menu-btn");
+      let cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = function(){
+        navBar.classList.add("active");
+        menuBtn.style.opacity = "0";
+        menuBtn.style.pointerEvents = "none";
+        body.style.overflow = "hidden";
+        scrollBtn.style.pointerEvents = "none";
+      }
+      cancelBtn.onclick = function(){
+        navBar.classList.remove("active");
+        menuBtn.style.opacity = "1";
+        menuBtn.style.pointerEvents = "auto";
+        body.style.overflow = "auto";
+        scrollBtn.style.pointerEvents = "auto";
+      }
+      
+      
+      let navLinks = document.querySelectorAll(".menu li a");
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click" , function() {
+          navBar.classList.remove("active");
+          menuBtn.style.opacity = "1";
+          menuBtn.style.pointerEvents = "auto";
+        });
+      }
+      </script>
+
+    
     <section class="home" id="home">
       <div class="home-content">
         <div class="text">
